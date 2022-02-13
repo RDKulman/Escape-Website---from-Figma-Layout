@@ -1,0 +1,37 @@
+.form {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 500px;
+
+    @include phone {
+        width: 90%;
+    }
+
+    &__input {
+        display: block;
+        border: 1px solid transparent;
+        border-top-left-radius: var(--border-radius);
+        border-bottom-left-radius: var(--border-radius);
+        width: 100%;
+
+        font-size: 12px;
+        text-indent: 33px;
+
+        @include phone {
+            text-indent: 12px;
+        }
+    }
+
+    &__btn {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        padding: 14px 42px;  
+
+        font-size: 12px;
+
+        @include phone {
+            padding: 10px 20px; 
+        }
+    }
+}

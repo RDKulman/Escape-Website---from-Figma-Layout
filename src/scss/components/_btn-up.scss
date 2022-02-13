@@ -1,0 +1,70 @@
+.btn-up-wrapper {
+    position: fixed;
+    right: 10%;
+    bottom: 200px;
+    z-index: 3;
+    overflow: hidden;
+    
+    background-color: transparent;
+    
+    @include small-desktop {
+        right:  2%;
+        bottom: 200px;
+    }
+
+    @include tablet {
+        right: 4%;
+        bottom: 280px;
+    }
+
+    @include phone {
+        right: 10%;
+        bottom: 100px;
+    }
+}
+
+.btn-up {
+    position: relative;
+    display: block;
+    border-radius: var(--border-radius);
+    padding: 10px 28px;
+
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    color: var(--color-light);
+    
+    background-color: var(--color-corribean);
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+    transition: all 0.2s linear;
+
+    @include small-desktop {
+        font-size: 18px;
+    }
+
+    @include tablet {
+        font-size: 16px;
+    }
+
+    @include phone {
+        padding: 6px 12px;
+        font-size: 16px;
+    }
+
+    &:hover {
+        color: var(--color-corribean);
+        background-color: var(--color-light);
+    }
+
+    &:active {
+        color: var(--color-light);
+        background-color: var(--color-corribean);
+    }
+
+    &--active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}

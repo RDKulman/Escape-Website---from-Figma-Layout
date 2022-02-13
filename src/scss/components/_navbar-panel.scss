@@ -1,0 +1,47 @@
+.navbar-panel {
+    padding: 10px 0;
+    background-color: var(--color-light);
+}
+
+.nav-subnav {
+    &__list {
+        display: flex;
+
+        @include middle-desktop {
+            overflow: auto;
+        }
+
+        @include phone {
+            overflow: auto;
+        }
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 21px;
+        }
+    }
+
+    &__btn {
+        display: block;
+        padding: 12px 28px;
+        width: 139px;
+        font-family: 'Lora', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 143%;
+        text-align: center;
+        color: var(--color-rollingstone);
+
+        transition: all 0.2s linear;
+
+        &:hover {
+            color: var(--color-light);
+            background-color: var(--color-primary);
+        }
+
+        @include phone {
+            width: auto;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.hero-page {
+    padding-top: 170px;
+    padding-bottom: 170px;
+
+    background-color: #1f1f1f;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &--main {
+        background-image: url(("../img/hero-page-bg.png"));
+    }
+
+    &__content {
+        padding-top: 10px;
+        max-height: 160px;
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 18px;
+    }
+
+    &__descr {
+        margin-bottom: 31px;
+    }
+
+    &__btns {
+        display: flex;
+    }
+
+    &__btn {
+        margin: auto;
+    }
+}

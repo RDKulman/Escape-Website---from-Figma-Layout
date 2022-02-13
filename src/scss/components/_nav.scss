@@ -1,0 +1,27 @@
+.nav {
+    color: var(--color-light);
+
+    &__list {
+        display: flex;
+        padding: 0 10px;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 20px;
+
+            @include phone {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    &__btn-nav {
+        padding: 4px 9px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 167%;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+    }
+}

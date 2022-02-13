@@ -1,0 +1,51 @@
+.articles-recent {
+    padding-top: 30px;
+    padding-bottom: 78px;
+    background-color: var(--color-body-bg);
+
+    &__content {
+        padding: 6px 12px; // подправить после пиксель перфекта, чтобы паддинги были одинаковые везде
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        place-items: center center;
+        gap: 22px 24px;
+        margin: 0 auto;
+
+        @include small-desktop {
+            gap: 30px;
+            max-width: 700px;
+        }
+    }
+
+    &__item {
+        grid-column: span 4;
+        
+        @include small-desktop {
+            grid-column: span 6;
+        }
+
+        @include tablet {
+            grid-column: span 12;
+        }
+    }
+
+
+    // &__list {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     justify-content: center;
+    // }
+
+    // &__item {
+    //     margin-bottom: 20px;
+
+    //     &:not(:nth-child(3n)) {
+    //         margin-right: 24px; 
+    //     }
+    // }
+
+}

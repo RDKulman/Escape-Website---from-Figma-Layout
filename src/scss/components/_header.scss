@@ -1,0 +1,25 @@
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    padding: 22px 0;
+    background-color: transparent;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include phone {
+            flex-direction: column;
+        }
+    }
+
+    &__logo {
+        @include phone {
+            margin-bottom: 20px;
+        }
+    }
+}

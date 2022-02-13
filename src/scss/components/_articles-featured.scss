@@ -1,0 +1,45 @@
+.articles-featured {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    background-color: var(--color-body-bg);
+
+    &__title {
+        // --title-gap: 16px;
+        --title-gap: 16px;
+    }
+
+    &__content {
+        padding: 7px 10px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 20px;
+
+            @include small-desktop {
+                margin-right: 30px;
+                margin-bottom: 30px;
+            }
+
+            @include phone {
+                margin-right: 0px;
+                margin-bottom: 30px;
+            }
+        }  
+        
+        @include small-desktop {
+            margin: 0px 30px;
+        }
+
+        @include phone {
+            margin: 0px 0px;
+        }
+    }
+}
+

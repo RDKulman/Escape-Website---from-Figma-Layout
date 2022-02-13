@@ -1,0 +1,22 @@
+.breadcrumbs {
+    // border: 1px solid white;
+    display: flex;
+
+    &__link {
+        margin: auto;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 30px;
+        text-align: center;
+        color: rgba(#f5efed, 0.6);
+        transition: color 0.2s linear;
+
+        &:hover {
+            color: var(--color-coral);
+        }
+
+        @include middle-desktop {
+            font-size: calc(16px + 0.5vw);
+        }
+    }
+}
